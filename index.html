@@ -16,25 +16,29 @@ Select ONE Additional Feature to Add
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <title>Unit 13 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz About Emma </h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1"Mean Girls</option>
+          <option value="movie2">Parent Trap</option>
+          <option value="movie3">21 jumpstreet</option>
+          <option value="movie4">Lady Bird
+          </option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Mean Girls</button>
     </form>
     <div id="movie-result"></div>
     <hr />
@@ -43,13 +47,13 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1"The Giver</option>
+          <option value="book2">1984</option>
+          <option value="book3">The Lord of the Rings</option>
+          <option value="book4">Every Last Word</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">If He Had Been With Me</button>
     </form>
     <div id="book-result"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -81,8 +85,37 @@ Select ONE Additional Feature to Add
           $("#book-result").text("Try Again!");
         }
       });
+      
+      
+         $("#book-pic").slideDown(1000, function () {
+     $("#book-h1").slideDown(3000);
+    })
+      
+       $("img").animate(
+  {
+    width: "300px",
+    marginLeft: "40px",
+    borderWidth: "10px",
+  },
+  2500
+ );
+  $("h1").animate(
+    {
+      marginLeft: "20px",
+      frontSize: "6em",
+   },
+   4000
+  );
+      
+      
     </script>
   </body>
 
-  <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
+
 </html>
+
+<img src = "https://i5.walmartimages.com/seo/Mean-Girls-One-Sheet-Wall-Poster-22-375-x-34_2540fcee-cce2-48ea-b395-21091676b1f7.5ece1a8d89adde81eb3068b13a4b9931.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF">
+
+<img src = "https://m.media-amazon.com/images/I/813yHPADcjL._AC_UF1000,1000_QL80_.jpg">
+
+<img src = "https://m.media-amazon.com/images/M/MV5BMTg2NjJiODctM2IyMS00MmQ5LWI1YmQtNTBjMTI4M2U2YzA5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
